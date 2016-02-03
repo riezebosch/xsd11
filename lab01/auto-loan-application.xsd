@@ -29,6 +29,12 @@
 								</xs:complexType>
 							</xs:element>
 						</xs:sequence>
+						<xs:assert test="Address/State ne 'CT' or Age ge 19" />
+						<xs:assert test="Address/State ne 'MA' or Age ge 18" />
+						<xs:assert test="Address/State ne 'ME' or Age ge 19" />
+						<xs:assert test="Address/State ne 'NH' or Age ge 17" />
+						<xs:assert test="Address/State ne 'RI' or Age ge 18" />
+						<xs:assert test="Address/State ne 'VT' or Age ge 16" />
 					</xs:complexType>
 				</xs:element>
 				<xs:element name="Car">

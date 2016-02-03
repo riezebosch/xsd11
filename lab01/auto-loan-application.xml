@@ -1,18 +1,18 @@
 <?xml version="1.0"?>
-<Loan-Application>
-    <Applicant>
-        <Name>Johnny Brown</Name>
-        <Age>17</Age>
-        <Address>
-            <Street>101 Curl Drive</Street>
-            <City>Burlington</City>
-            <State>VT</State>
-        </Address>
-    </Applicant>
-    <Car>
-        <Make>Mazda</Make>
-        <Model>Miata</Model>
-        <Year>2009</Year>
-    </Car>
-    <Loan-Amount>26000</Loan-Amount>
+<Loan-Application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///C:/XSD11/Labs/lab01/auto-loan-application.xsd">
+	<Applicant>
+		<Name>Johnny Brown</Name>
+		<Age>17</Age>
+		<Address>
+			<Street>101 Curl Drive</Street>
+			<City>Burlington</City>
+			<State>VT</State>
+		</Address>
+	</Applicant>
+	<Car>
+		<Make>Mazda</Make>
+		<Model>Miata</Model>
+		<Year>2009</Year>
+	</Car>
+	<Loan-Amount>26000</Loan-Amount>
 </Loan-Application>
