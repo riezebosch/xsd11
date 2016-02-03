@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<Document classification="secret">
-    <Para classification="unclassified">
+<Document classification="secret" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///C:/XSD11/Labs/lab04/classification.xsd">
+	<Para classification="unclassified">
           One if by land, two if by sea;
     </Para>
     <Para classification="secret">

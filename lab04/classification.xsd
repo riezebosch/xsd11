@@ -6,7 +6,9 @@
 				<xs:element name="Para" type="ParaType" maxOccurs="unbounded"/>
 			</xs:sequence>
 			<xs:attribute name="classification" type="classificationLevels" use="required"/>
-			
+			<xs:assert test="@classification ne 'unclassified' or not(Para[@classification eq 'top-secret' or @classification eq 'secret' or @classification eq 'confidential'])" />
+			<xs:assert test="@classification ne 'confidential' or not(Para[@classification eq 'top-secret' or @classification eq 'secret'])" />
+			<xs:assert test="@classification ne 'secret' or not(Para[@classification eq 'top-secret'])" />
 		</xs:complexType>
 	</xs:element>
 	<xs:complexType name="ParaType">
