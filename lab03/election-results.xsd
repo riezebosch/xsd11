@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" elementFormDefault="qualified" vc:minVersion="1.1">
+	<xs:element name="ElectionResultsByPercentage">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Candidate" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:simpleContent>
+							<xs:extension base="xs:unsignedByte">
+								<xs:attribute name="name" type="xs:NMTOKEN" use="required"/>
+							</xs:extension>
+						</xs:simpleContent>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

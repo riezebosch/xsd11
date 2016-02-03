@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" elementFormDefault="qualified" vc:minVersion="1.1">
+	<xs:element name="cellphone">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="features">
+					<xs:complexType>
+						<xs:openContent mode="interleave">
+							<xs:any processContents="lax"/>
+						</xs:openContent>
+						<xs:sequence>
+							<xs:element name="Authentication" type="empty"/>
+							<xs:element name="RingerAndEarpieceVolumeControl" type="empty"/>
+							<xs:element name="BatteryStrengthIndicator" type="empty"/>
+							<xs:element name="AudibleKeypadControls" type="empty"/>
+							<xs:element name="DTMF-KeytoneSignalling" type="empty"/>
+							<xs:element name="One-YearPartsAndLaborWarranty" type="empty"/>
+							<xs:element name="StoresNamesAndNumbers" type="empty"/>
+							<xs:element name="OneTouchDialing" type="empty"/>
+							<xs:element name="CallerID" type="empty"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="model" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="empty"/>
+</xs:schema>

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<homeAppliances>
+
+      <appliance kind="stereo">
+          <description>My stereo</description>
+          <brand>Sony</brand>
+          <type>Hi-fi</type>
+      </appliance>
+
+      <appliance kind="juicer">
+          <description>There&apos;s just no substitute for a properly squeezed orange in the morning. 
+             So delicate and refreshing. The finest hotels use mechanical juicers of this type for their 
+             most discriminating guests. This is the largest selling juicer of its kind. It&apos;s a beautiful 
+             little all-metal piece in baked enamel and polished chrome; it even won the Frankfurt Fair Award 
+             for its design. Uses no electricity and produces no non-recyclable waste as do frozen juices.</description>
+          <warranty>lifetime warranty</warranty>
+          <name>OJ Home Juicer</name>
+          <image>images\mighty_oj.gif</image>
+          <cost>41.95</cost>
+          <retailer>http://www.thewhitewhale.com/oj.htm</retailer>
+      </appliance>
+
+</homeAppliances>

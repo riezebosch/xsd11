@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+
+    <xs:override schemaLocation="auto-loan-application.xsd">
+        <xs:complexType name="Applicant-Type">
+            <xs:sequence>
+                <xs:element name="Name" type="xs:string" />
+                <xs:element name="Age" type="xs:unsignedByte" />
+                <xs:element name="Address" type="Address-Type" />
+            </xs:sequence>
+            <xs:assert test="if (Address/State eq 'CT') then number(Age) ge 19 else
+                             if (Address/State eq 'MA') then number(Age) ge 18 else
+                             if (Address/State eq 'ME') then number(Age) ge 19 else
+                             if (Address/State eq 'NH') then number(Age) ge 17 else
+                             if (Address/State eq 'RI') then number(Age) ge 18 else
+                             if (Address/State eq 'VT') then number(Age) ge 16 else
+                             false()" />
+        </xs:complexType>
+    </xs:override>
+
+</xs:schema>

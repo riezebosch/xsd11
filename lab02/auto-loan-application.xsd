@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" elementFormDefault="qualified" vc:minVersion="1.1">
+	<xs:complexType name="Loan-Application-Type">
+		<xs:sequence>
+			<xs:element name="Applicant" type="Applicant-Type"/>
+			<xs:element name="Car" type="Car-Type"/>
+			<xs:element name="Loan-Amount" type="xs:unsignedInt"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="Applicant-Type">
+		<xs:sequence>
+			<xs:element name="Name" type="xs:string"/>
+			<xs:element name="Age" type="xs:unsignedByte"/>
+			<xs:element name="Address" type="Address-Type"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="Address-Type">
+		<xs:sequence>
+			<xs:element name="Street" type="xs:string"/>
+			<xs:element name="City" type="xs:string"/>
+			<xs:element name="State" type="State-Type"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="Car-Type">
+		<xs:sequence>
+			<xs:element name="Make" type="xs:string"/>
+			<xs:element name="Model" type="xs:string"/>
+			<xs:element name="Year" type="xs:gYear"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="State-Type">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="CT"/>
+			<xs:enumeration value="MA"/>
+			<xs:enumeration value="ME"/>
+			<xs:enumeration value="NH"/>
+			<xs:enumeration value="RI"/>
+			<xs:enumeration value="VT"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="Loan-Application" type="Loan-Application-Type"/>
+</xs:schema>

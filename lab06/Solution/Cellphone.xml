@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<cellphone model="Nokia 252"
+           xmlns:new="http://www.nokia.com/features/new"> 
+    <features>
+        <CallerID/>
+        <new:GPS/>
+        <new:Camera/>
+        <RingerAndEarpieceVolumeControl/>
+        <OneTouchDialing/>
+        <BatteryStrengthIndicator/>
+        <AudibleKeypadControls/>
+        <DTMF-KeytoneSignalling/>
+        <One-YearPartsAndLaborWarranty/>
+        <Authentication/>
+        <StoresNamesAndNumbers/>
+    </features> 
+</cellphone>
+
